@@ -1,15 +1,26 @@
 # 研股股 · 每日复盘数据包
 
-> 供 Google NotebookLM / Gemini 免鉴权抓取。数据来源：Wind 金融终端。
+> 供 Google NotebookLM / Gemini Spark 免鉴权抓取。数据来源：Wind 金融终端。
 > 覆盖交易日：2026-09-22、09-23、09-24（每个交易日收盘后更新）
 
-## ★ NotebookLM 抓取入口（稳定，每天覆盖）
+## ★ NotebookLM / Spark 抓取入口（稳定，每天覆盖）
 
 ```
 https://raw.githubusercontent.com/wanyanjunxi-web/AStock-Daily-Review/main/latest.md
 ```
 
 该文件每个交易日被覆盖为最新一期报告，NotebookLM 添加来源后点“更新来源”即可拿到最新。
+
+> ★ 协作情况说明见 [`FOR_GEMINI_SPARK.md`](FOR_GEMINI_SPARK.md)（含字段口径、抓取方式、建议提示词）。
+
+## 推送规格（重要）
+
+每个交易日**只推两类内容**：
+
+1. **纯数据** → `<日期>/data.json`（Wind 原始字段）
+2. **分析文字** → `latest.md` + `<日期>/report.md`
+
+**不推 HTML 看板、图片等非文字内容。**
 
 ## 一、三日市场速览
 
@@ -43,10 +54,12 @@ https://raw.githubusercontent.com/wanyanjunxi-web/AStock-Daily-Review/main/lates
 ## 三、文件结构
 
 ```
-├── latest.md              ★ 最新日报（每天覆盖，NotebookLM 盯这个）
-├── 2026-09-22/  report.md · dashboard.html · data.json
-├── 2026-09-23/  report.md · dashboard.html · data.json
-└── 2026-09-24/  report.md · dashboard.html · data.json
+├── README.md              本文件
+├── FOR_GEMINI_SPARK.md    致 Spark 的情况说明（字段口径+提示词）
+├── latest.md              ★ 最新日报（每天覆盖）
+├── 2026-09-22/  report.md · data.json
+├── 2026-09-23/  report.md · data.json
+└── 2026-09-24/  report.md · data.json
 ```
 
 ## 四、数据说明
