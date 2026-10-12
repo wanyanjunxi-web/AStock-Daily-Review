@@ -1,0 +1,531 @@
+{
+  "trade_date": "2026-10-12",
+  "generated_at": "2026-10-12 16:40:47",
+  "data_sources": {
+    "quote": "腾讯自选股行情接口 qt.gtimg.cn",
+    "moneyflow": "新浪财经资金流向 MoneyFlow.ssl_qsfx_zjlrqs",
+    "csindex": "中证指数官网 csindex.com.cn",
+    "news": "[MISSING]"
+  },
+  "source_note": "原定数据源为 Wind 金融终端（Wind MCP / wind-mcp-skill）。本运行环境未提供 Wind MCP，且 /workspace/toolkit 原始实现缺失，故改用上述真实公开行情接口取数，口径尽量对齐（主力资金单位已归一化为亿元）。主力资金为新浪口径，与 Wind 口径可能存在差异。中证主题指数 T 日值通常于 T+1 更新，滞后时以最新可得值列示并标注。",
+  "indices": [
+    {
+      "code": "931743.CSI",
+      "name": "半导体材料设备",
+      "close": 8349.47,
+      "pct": -0.96,
+      "as_of": "2026-10-09",
+      "stale": true
+    },
+    {
+      "code": "931160.CSI",
+      "name": "通信设备(光模块)",
+      "close": 17846.23,
+      "pct": -0.62,
+      "as_of": "2026-10-09",
+      "stale": true
+    },
+    {
+      "code": "000001.SH",
+      "name": "上证指数",
+      "close": 3797.24,
+      "pct": -0.43,
+      "amount_yi": 7149.1,
+      "as_of": "20261012",
+      "stale": false
+    },
+    {
+      "code": "399006.SZ",
+      "name": "创业板指",
+      "close": 2963.82,
+      "pct": -2.61,
+      "amount_yi": 3923.34,
+      "as_of": "20261012",
+      "stale": false
+    },
+    {
+      "code": "000688.SH",
+      "name": "科创50",
+      "close": 1426.72,
+      "pct": -2.1,
+      "amount_yi": 646.17,
+      "as_of": "20261012",
+      "stale": false
+    }
+  ],
+  "benchmarks_extra": {
+    "399001.SZ": {
+      "name": "深证成指",
+      "code": "399001.SZ",
+      "close": 12384.87,
+      "prev_close": 12641.86,
+      "open": 12586.96,
+      "high": 12656.69,
+      "low": 12373.0,
+      "chg": -256.99,
+      "pct": -2.03,
+      "amount_yi": 8229.21,
+      "turnover_rate": 2.17,
+      "quote_time": "20261012161433",
+      "quote_date": "20261012"
+    }
+  },
+  "stocks": [
+    {
+      "code": "300308.SZ",
+      "name": "中际旭创",
+      "benchmark": "创业板指",
+      "close": 724.47,
+      "pct": -6.41,
+      "amount_yi": 156.24,
+      "flow_asof": "2026-10-12",
+      "main_net_today_yi": -5.97,
+      "main_net_5d_yi": -5.87,
+      "main_net_10d_yi": -61.14,
+      "main_net_20d_yi": 30.09,
+      "consecutive_outflow_days": 1,
+      "flow_series": [
+        {
+          "date": "2026-10-12",
+          "main_net_yi": -5.97
+        },
+        {
+          "date": "2026-10-09",
+          "main_net_yi": 6.62
+        },
+        {
+          "date": "2026-10-08",
+          "main_net_yi": 0.22
+        },
+        {
+          "date": "2026-09-30",
+          "main_net_yi": -8.79
+        },
+        {
+          "date": "2026-09-29",
+          "main_net_yi": 2.05
+        },
+        {
+          "date": "2026-09-28",
+          "main_net_yi": -40.32
+        },
+        {
+          "date": "2026-09-24",
+          "main_net_yi": -15.93
+        },
+        {
+          "date": "2026-09-23",
+          "main_net_yi": 2.24
+        },
+        {
+          "date": "2026-09-22",
+          "main_net_yi": -15.25
+        },
+        {
+          "date": "2026-09-21",
+          "main_net_yi": 13.98
+        }
+      ]
+    },
+    {
+      "code": "300502.SZ",
+      "name": "新易盛",
+      "benchmark": "创业板指",
+      "close": 347.6,
+      "pct": -6.1,
+      "amount_yi": 125.49,
+      "flow_asof": "2026-10-12",
+      "main_net_today_yi": -6.72,
+      "main_net_5d_yi": -9.81,
+      "main_net_10d_yi": -29.18,
+      "main_net_20d_yi": 54.48,
+      "consecutive_outflow_days": 1,
+      "flow_series": [
+        {
+          "date": "2026-10-12",
+          "main_net_yi": -6.72
+        },
+        {
+          "date": "2026-10-09",
+          "main_net_yi": 5.62
+        },
+        {
+          "date": "2026-10-08",
+          "main_net_yi": -4.84
+        },
+        {
+          "date": "2026-09-30",
+          "main_net_yi": -6.38
+        },
+        {
+          "date": "2026-09-29",
+          "main_net_yi": 2.52
+        },
+        {
+          "date": "2026-09-28",
+          "main_net_yi": -22.4
+        },
+        {
+          "date": "2026-09-24",
+          "main_net_yi": -5.59
+        },
+        {
+          "date": "2026-09-23",
+          "main_net_yi": 7.07
+        },
+        {
+          "date": "2026-09-22",
+          "main_net_yi": -5.75
+        },
+        {
+          "date": "2026-09-21",
+          "main_net_yi": 7.29
+        }
+      ]
+    },
+    {
+      "code": "300394.SZ",
+      "name": "天孚通信",
+      "benchmark": "创业板指",
+      "close": 229.54,
+      "pct": -2.34,
+      "amount_yi": 65.05,
+      "flow_asof": "2026-10-12",
+      "main_net_today_yi": -0.8,
+      "main_net_5d_yi": -2.98,
+      "main_net_10d_yi": -34.51,
+      "main_net_20d_yi": -0.16,
+      "consecutive_outflow_days": 1,
+      "flow_series": [
+        {
+          "date": "2026-10-12",
+          "main_net_yi": -0.8
+        },
+        {
+          "date": "2026-10-09",
+          "main_net_yi": 1.17
+        },
+        {
+          "date": "2026-10-08",
+          "main_net_yi": -10.9
+        },
+        {
+          "date": "2026-09-30",
+          "main_net_yi": -1.3
+        },
+        {
+          "date": "2026-09-29",
+          "main_net_yi": 8.86
+        },
+        {
+          "date": "2026-09-28",
+          "main_net_yi": -5.22
+        },
+        {
+          "date": "2026-09-24",
+          "main_net_yi": -5.88
+        },
+        {
+          "date": "2026-09-23",
+          "main_net_yi": 1.91
+        },
+        {
+          "date": "2026-09-22",
+          "main_net_yi": -13.2
+        },
+        {
+          "date": "2026-09-21",
+          "main_net_yi": -9.14
+        }
+      ]
+    },
+    {
+      "code": "002281.SZ",
+      "name": "光迅科技",
+      "benchmark": "深成指",
+      "close": 140.17,
+      "pct": -5.74,
+      "amount_yi": 30.68,
+      "flow_asof": "2026-10-12",
+      "main_net_today_yi": -1.78,
+      "main_net_5d_yi": -1.19,
+      "main_net_10d_yi": -25.42,
+      "main_net_20d_yi": 32.82,
+      "consecutive_outflow_days": 1,
+      "flow_series": [
+        {
+          "date": "2026-10-12",
+          "main_net_yi": -1.78
+        },
+        {
+          "date": "2026-10-09",
+          "main_net_yi": 1.28
+        },
+        {
+          "date": "2026-10-08",
+          "main_net_yi": 0.74
+        },
+        {
+          "date": "2026-09-30",
+          "main_net_yi": -2.15
+        },
+        {
+          "date": "2026-09-29",
+          "main_net_yi": 0.71
+        },
+        {
+          "date": "2026-09-28",
+          "main_net_yi": -11.52
+        },
+        {
+          "date": "2026-09-24",
+          "main_net_yi": -3.99
+        },
+        {
+          "date": "2026-09-23",
+          "main_net_yi": -0.81
+        },
+        {
+          "date": "2026-09-22",
+          "main_net_yi": -4.63
+        },
+        {
+          "date": "2026-09-21",
+          "main_net_yi": -3.27
+        }
+      ]
+    },
+    {
+      "code": "002371.SZ",
+      "name": "北方华创",
+      "benchmark": "深成指",
+      "close": 587.98,
+      "pct": -1.02,
+      "amount_yi": 32.78,
+      "flow_asof": "2026-10-12",
+      "main_net_today_yi": 2.17,
+      "main_net_5d_yi": -1.93,
+      "main_net_10d_yi": -0.23,
+      "main_net_20d_yi": 12.0,
+      "consecutive_outflow_days": 0,
+      "flow_series": [
+        {
+          "date": "2026-10-12",
+          "main_net_yi": 2.17
+        },
+        {
+          "date": "2026-10-09",
+          "main_net_yi": 0.91
+        },
+        {
+          "date": "2026-10-08",
+          "main_net_yi": -3.8
+        },
+        {
+          "date": "2026-09-30",
+          "main_net_yi": -0.11
+        },
+        {
+          "date": "2026-09-29",
+          "main_net_yi": -1.1
+        },
+        {
+          "date": "2026-09-28",
+          "main_net_yi": 1.88
+        },
+        {
+          "date": "2026-09-24",
+          "main_net_yi": -1.56
+        },
+        {
+          "date": "2026-09-23",
+          "main_net_yi": 2.72
+        },
+        {
+          "date": "2026-09-22",
+          "main_net_yi": 0.44
+        },
+        {
+          "date": "2026-09-21",
+          "main_net_yi": -1.78
+        }
+      ]
+    },
+    {
+      "code": "688012.SH",
+      "name": "中微公司",
+      "benchmark": "科创50",
+      "close": 311.21,
+      "pct": 0.07,
+      "amount_yi": 41.16,
+      "flow_asof": "2026-10-12",
+      "main_net_today_yi": 0.61,
+      "main_net_5d_yi": -3.27,
+      "main_net_10d_yi": -9.61,
+      "main_net_20d_yi": -3.06,
+      "consecutive_outflow_days": 0,
+      "flow_series": [
+        {
+          "date": "2026-10-12",
+          "main_net_yi": 0.61
+        },
+        {
+          "date": "2026-10-09",
+          "main_net_yi": 2.01
+        },
+        {
+          "date": "2026-10-08",
+          "main_net_yi": 0.04
+        },
+        {
+          "date": "2026-09-30",
+          "main_net_yi": -3.08
+        },
+        {
+          "date": "2026-09-29",
+          "main_net_yi": -2.86
+        },
+        {
+          "date": "2026-09-28",
+          "main_net_yi": 1.65
+        },
+        {
+          "date": "2026-09-24",
+          "main_net_yi": -0.57
+        },
+        {
+          "date": "2026-09-23",
+          "main_net_yi": -2.02
+        },
+        {
+          "date": "2026-09-22",
+          "main_net_yi": -3.87
+        },
+        {
+          "date": "2026-09-21",
+          "main_net_yi": -1.53
+        }
+      ]
+    },
+    {
+      "code": "688072.SH",
+      "name": "拓荆科技",
+      "benchmark": "科创50",
+      "close": 633.0,
+      "pct": 2.78,
+      "amount_yi": 31.6,
+      "flow_asof": "2026-10-12",
+      "main_net_today_yi": 1.0,
+      "main_net_5d_yi": 1.81,
+      "main_net_10d_yi": 0.11,
+      "main_net_20d_yi": 7.54,
+      "consecutive_outflow_days": 0,
+      "flow_series": [
+        {
+          "date": "2026-10-12",
+          "main_net_yi": 1.0
+        },
+        {
+          "date": "2026-10-09",
+          "main_net_yi": 1.39
+        },
+        {
+          "date": "2026-10-08",
+          "main_net_yi": 0.16
+        },
+        {
+          "date": "2026-09-30",
+          "main_net_yi": -0.74
+        },
+        {
+          "date": "2026-09-29",
+          "main_net_yi": 0.01
+        },
+        {
+          "date": "2026-09-28",
+          "main_net_yi": -2.1
+        },
+        {
+          "date": "2026-09-24",
+          "main_net_yi": -1.88
+        },
+        {
+          "date": "2026-09-23",
+          "main_net_yi": 1.27
+        },
+        {
+          "date": "2026-09-22",
+          "main_net_yi": -0.01
+        },
+        {
+          "date": "2026-09-21",
+          "main_net_yi": 1.02
+        }
+      ]
+    },
+    {
+      "code": "688120.SH",
+      "name": "华海清科",
+      "benchmark": "科创50",
+      "close": 229.0,
+      "pct": 1.61,
+      "amount_yi": 20.68,
+      "flow_asof": "2026-10-12",
+      "main_net_today_yi": 1.26,
+      "main_net_5d_yi": -0.17,
+      "main_net_10d_yi": -3.72,
+      "main_net_20d_yi": 0.78,
+      "consecutive_outflow_days": 0,
+      "flow_series": [
+        {
+          "date": "2026-10-12",
+          "main_net_yi": 1.26
+        },
+        {
+          "date": "2026-10-09",
+          "main_net_yi": 0.87
+        },
+        {
+          "date": "2026-10-08",
+          "main_net_yi": 0.17
+        },
+        {
+          "date": "2026-09-30",
+          "main_net_yi": -1.7
+        },
+        {
+          "date": "2026-09-29",
+          "main_net_yi": -0.77
+        },
+        {
+          "date": "2026-09-28",
+          "main_net_yi": -1.88
+        },
+        {
+          "date": "2026-09-24",
+          "main_net_yi": -0.72
+        },
+        {
+          "date": "2026-09-23",
+          "main_net_yi": 0.61
+        },
+        {
+          "date": "2026-09-22",
+          "main_net_yi": -0.4
+        },
+        {
+          "date": "2026-09-21",
+          "main_net_yi": -1.16
+        }
+      ]
+    }
+  ],
+  "fund": {
+    "code": "159516.SZ",
+    "name": "半导体设备ETF国泰",
+    "close": 0.617,
+    "pct": -0.8,
+    "amount_yi": 24.69
+  },
+  "news": "[MISSING]"
+}
